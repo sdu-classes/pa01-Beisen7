@@ -78,10 +78,10 @@ public class Time {
         time.setSecond(second - 1);
         if (time.getSecond() < 0) {
             time.setMinute(minute - 1);
-            time.setSecond(0);
+            time.setSecond(59);
             if (time.minute < 0) {
                 time.setHour(hour - 1);
-                time.setMinute(0);
+                time.setMinute(59);
                 if (time.hour < 0) {
                     time.setHour(23);
                     time.setMinute(59);
